@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  <title>Corpo Bonito em RV</title>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="fundo" src="assets/IMG/fundos.jpg">
+      <img id="head" src="assets/IMG/head.webp">
+      <img id="barriga" src="assets/IMG/barriga.webp">
+      <img id="arma" src="assets/IMG/FUN.jpg">
+      <img id="texto" src="assets/IMG/texto.png">
+    </a-assets>
+
+    <a-plane src="#texto" position="0 6 -4" rotation="0 0 0" width="8" height="2"></a-plane>
+
+    <a-sphere src="#head" position="0 4 -5" radius="0.75" rotation="0 280 0">></a-sphere>
+
+    <a-box src="#barriga" position="0 2.2 -5" depth="0.8" height="2" width="1.2" color="#ffcba4"></a-box>
+
+    <a-cylinder position="1.1 2.2 -5" radius="0.2" height="1.5" rotation="0 0 -20" color="#ffe0bd"></a-cylinder>
+
+    <a-cylinder position="-1.1 2.2 -5" radius="0.2" height="1.5" rotation="0 0 20" color="#ffe0bd"></a-cylinder>
+
+    <a-box src="#arma" position="1.6 1.6 -5" width="0.4" height="0.4" depth="1" rotation="0 0 45"></a-box>
+
+
+    <a-cylinder position="-0.4 0.5 -5" radius="0.25" height="1.5" color="#deb887"></a-cylinder>
+    <a-cylinder position="0.4 0.5 -5" radius="0.25" height="1.5" color="#deb887"></a-cylinder>
+
+    <a-plane position="0 0 -5" rotation="-90 0 0" width="20" height="20" color="#8B4513"></a-plane>
+
+    <a-sky src="#fundo"></a-sky>
+  </a-scene>
+</body>
+
+</html>
